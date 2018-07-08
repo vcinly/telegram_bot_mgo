@@ -1,6 +1,7 @@
 module TelegramBotMgo
   module Model
     class PhotoSize < Entity
+      field :name      , type: String
       field :file_id   , type: String
       field :width     , type: Integer
       field :height    , type: Integer
