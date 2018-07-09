@@ -1,6 +1,7 @@
 module TelegramBotMgo
   module Model
     class Update < Entity
+      field :raw_json               , type: String
       field :update_id              , type: Integer
       # field :message              , type: Message
       has_one :message              , class_name: "Message", inverse_of: :update
