@@ -9,6 +9,7 @@ module TelegramBotMgo
       field :file_path , type: String
 
       belongs_to :message  , class_name: "Message", inverse_of: :photo
+      belongs_to :document  , class_name: "Document", inverse_of: :photo
     end
   end
 end
